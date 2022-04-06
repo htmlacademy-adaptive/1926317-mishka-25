@@ -1,0 +1,31 @@
+.reviews__wrapper {
+  margin: 0;
+  padding: 30px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  align-items: center;
+  margin: 0;
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  align-items: center;
+  color: hsl(0, 0%, 27%);
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+}

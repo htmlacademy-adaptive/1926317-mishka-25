@@ -1,0 +1,14 @@
+$main-font: "Open Sans", sans-serif;
+
+.page__body {
+  background-color: hsl(0, 0%, 78%);
+  color: hsl(0, 0%, 0%);
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100%;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+}

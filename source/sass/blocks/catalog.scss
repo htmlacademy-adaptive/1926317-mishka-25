@@ -1,0 +1,74 @@
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.catalog__decor {
+  background-color: hsl(168, 54%, 60%);
+  padding-top: 24px;
+  padding-bottom: 31px;
+}
+
+.catalog__toy {
+  background-color: hsl(171, 48%, 55%);
+  padding-top: 24px;
+  padding-bottom: 31px;
+}
+
+.catalog__card {
+  padding: 30px;
+}
+
+.catalog__card-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  align-items: center;
+  margin: 0;
+}
+
+.catalog__card-best {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: hsl(168, 54%, 60%);
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.catalog__card-about {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+  color: hsl(0, 0%, 27%);
+  margin-top: 17.5px;
+  margin-bottom: 28px;
+}
+
+.catalog__card-property {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: hsl(0, 0%, 27%);
+  align-items: center;
+}
+
+.catalog__card-image {
+  margin-top: 28px;
+}
