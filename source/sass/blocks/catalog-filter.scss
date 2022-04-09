@@ -1,0 +1,35 @@
+.catalog-filter__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: hsl(168, 54%, 60%);
+  text-transform: uppercase;
+}
+
+.catalog-filter__control-label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.catalog-filter__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.catalog-filter__require {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: hsl(0, 0%, 27%);
+}
+
+.catalog-filter__button {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 27%);
+  font-family: inherit;
+}
