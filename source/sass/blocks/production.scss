@@ -1,0 +1,26 @@
+.production__product-name {
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.production__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: hsl(0, 0%, 27%);
+}
+
+.production__form-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 27%);
+  text-decoration: none;
+}
