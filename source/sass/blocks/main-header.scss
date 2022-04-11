@@ -2,11 +2,27 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header__logo {
-  margin: 22px 118px 22px 116px;
+  min-height: 79px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    min-height: 89px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo {
+    min-height: 89px;
+  }
 }

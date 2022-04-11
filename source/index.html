@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -45,8 +46,8 @@
         Милые штуки ручной работы для дома
       </h1>
       <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
         <div class="catalog__wrapper">
-          <h2 class="visually-hidden">Каталог</h2>
           <div class="catalog__decor">
             <a class="catalog__link" href="#">
               Предметы интерьера
@@ -59,22 +60,24 @@
               <svg class="catalog__toy-icon" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".5" d="m0 44 27.4 16V36.54L0 20.44v23.55Zm51.3-31.52V15c0 1.81-3.5 3.32-7.7 3.32-4.3 0-7.7-1.5-7.7-3.32v-4.13c.3 1.71 3.6 3.12 7.7 3.12 4.3 0 7.7-1.5 7.7-3.32 0-1.81-3.5-3.32-7.7-3.32h-1l-5-2.92v3.12c0 1.81-3.5 3.32-7.7 3.32-2.7 0-5-.6-6.4-1.5-.2-.2-.4-.41-.7-.61-.4-.4-.6-.8-.6-1.21V4.53l-4.8 2.82h-1.1c-4.3 0-7.7 1.5-7.7 3.32 0 1.81 3.5 3.32 7.7 3.32 4.1 0 7.4-1.4 7.7-3.12V15c0 1.81-3.5 3.32-7.7 3.32-4.3 0-7.7-1.5-7.7-3.32v-2.42l-6 3.53 27.5 16.1 27.4-16-6.2-3.73ZM37.7 22.75c0 1.81-3.5 3.32-7.7 3.32-4.3 0-7.7-1.5-7.7-3.32v-4.13c.3 1.72 3.6 3.13 7.7 3.13s7.4-1.41 7.7-3.13v4.13Zm-5.1 14V60L60 44V20.73l-27.4 16Zm-2.7-30.1c4.3 0 7.7-1.52 7.7-3.33S34.1 0 29.9 0c-4.3 0-7.7 1.51-7.7 3.32 0 1.81 3.4 3.32 7.7 3.32Z" fill="#149080"/></svg>
             </a>
           </div>
-          <div class="catalog__card">
-            <h3 class="catalog__card-title">Вязаные корзинки</h3>
-            <span class="catalog__card-best">товар недели</span>
-            <p class="catalog__card-about">Экологически чистая пряжа,
+        </div>
+        <div class="catalog__card">
+          <h3 class="catalog__card-title">Вязаные корзинки</h3>
+          <span class="catalog__card-best">товар недели</span>
+          <p class="catalog__card-about">Экологически чистая пряжа,
               ручная работа. Доступны в шести расцветках и трёх размерах.
-            </p>
+          </p>
+          <div class="catalog__property">
             <span class="catalog__card-property">Цвет:</span>
             <span class="catalog__card-property"> тиффани/серый</span>
             <span class="catalog__card-property">Диаметр:</span>
             <span class="catalog__card-property"> 25 см</span>
             <span class="catalog__card-property">Высота:</span>
             <span class="catalog__card-property"> 15 см</span>
-            <img class="catalog__card-image" src="img/catalog/triple-set.jpg" width="260" height="315" alt="изображение товара">
-            <span class="catalog__card-prize">Цена: 990 руб.</span>
-            <button class="catalog__card__button" type="button">заказать</button>
           </div>
+          <img class="catalog__card-image" src="img/catalog/triple-set.jpg" width="260" height="315" alt="изображение товара">
+          <span class="catalog__card-prize">Цена: 990 руб.</span>
+          <button class="catalog__card__button" type="button">заказать</button>
         </div>
       </section>
       <section class="about">
@@ -136,17 +139,24 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <span class="contacts__text"> e-mail:</span>
-          <span class="contacts__text"> info@mimimishkashop.ru</span>
-          <span class="contacts__text">адрес:</span>
-          <span class="contacts__text"> г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101</span>
-          <div class="contacts__map"></div>
+          <span class="contacts__text contacts__email"> e-mail:</span>
+          <span class="contacts__text contacts__email-text"> info@mimimishkashop.ru</span>
+          <span class="contacts__text contacts__adress"> адрес:</span>
+          <span class="contacts__text contacts__adress-text"> г. Санкт-Петербургул. Большая Конюшенная д. 19/8, офис 101</span>
+          <div class="contacts__map">
+            <img class="contacts__map-mobile" src="img/map-mobile.jpg" width="320" height="454" alt="мы на карте">
+            <img class="contacts__map-tablet" src="img/map-tablet.jpg" width="768" height="457" alt="мы на карте">
+            <img class="contacts__map-desktop" src="img/map-desktop.jpg" width="527" height="457" alt="мы на карте">
+          </div>
           <a class="contacts__button" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
+        <a class="main-footer__logo" href="#">
+          <img class="main-header__logo-image" src="img/header/mishka-logo-mobile.svg" width="86" height="35" alt="логотип мишка">
+        </a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">

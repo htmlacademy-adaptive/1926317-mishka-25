@@ -1,18 +1,47 @@
+.contacts {
+  margin: 0 auto;
+  padding: 0;
+}
+
 .contacts__wrapper {
-  padding: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  align-items: center;
   color: hsl(0, 0%, 27%);
+  display: grid;
+  grid-template-columns: 30px 1fr 2fr 30px;
+  grid-row: auto;
 }
 
 .contacts__title {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  align-items: center;
   color: hsl(0, 0%, 0%);
+  padding: 0;
+  margin: 0;
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.contacts__email {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.contacts__email-text {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.contacts__adress {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.contacts__adress-text {
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 .contacts__button {
@@ -20,7 +49,130 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  grid-column: 2/4;
+  grid-row: 6/7;
+}
+
+.contacts__map {
+  grid-column: 1/-1;
+  grid-row: 4/6;
+}
+
+.contacts__map-tablet {
+  display: none;
+}
+
+.contacts__map-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__map-mobile {
+    display: none;
+  }
+
+  .contacts__map-tablet {
+    display: block;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__email {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .contacts__email-text {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .contacts__adress {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+
+  .contacts__adress-text {
+    grid-column: 5/6;
+    grid-row: 2/3;
+  }
+
+  .contacts__button {
+    font-size: 17px;
+    grid-column: 2/6;
+    grid-row: 6/7;
+  }
+
+  .contacts__wrapper {
+    grid-template-columns: 30px 1fr 2fr 1fr 2fr 30px;
+    grid-row: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map-mobile {
+    display: none;
+  }
+
+  .contacts__map-tablet {
+    display: none;
+  }
+
+  .contacts__map-desktop {
+    display: block;
+  }
+
+  .contacts__map {
+    grid-column: 4/5;
+    grid-row: 1/7;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  .contacts__email {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .contacts__email-text {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+
+  .contacts__adress {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .contacts__adress-text {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+
+  .contacts__button {
+    grid-column: 2/4;
+    grid-row: 6/7;
+    text-align: left;
+  }
+
+  .contacts__wrapper {
+    grid-template-columns: 250px 1fr 2fr 3fr 30px;
+    grid-row: auto;
+  }
 }
