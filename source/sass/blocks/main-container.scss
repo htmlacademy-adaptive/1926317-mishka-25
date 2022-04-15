@@ -1,8 +1,6 @@
 .main-container {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
-  min-width: 320px;
+  max-width: 1150px;
   background-color: #ffffff;
   background-image: url("/img/hero-mobile.jpg");
   background-repeat: no-repeat;
@@ -16,12 +14,12 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
-  padding: 73px 0 120px 0;
+  padding: 73px 30px 120px 30px;
 }
 
 @media (min-width: $tablet-width) {
   .main-container__title {
-    padding: 155px 0 372px 0;
+    padding: 155px 50px 372px 50px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -29,7 +27,7 @@
 
 @media (min-width: $desktop-width) {
   .main-container__title {
-    padding: 157px 0 355px 0;
+    padding: 157px 225px 355px 225px;
     font-size: 53px;
     line-height: 57px;
   }

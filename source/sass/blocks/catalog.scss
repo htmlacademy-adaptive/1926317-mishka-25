@@ -10,67 +10,54 @@
 .catalog__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__wrapper {
     flex-direction: row;
-    margin: 0 auto;
+    // margin: 0 auto;
+    padding: 50px;
   }
 }
 
 .catalog__decor {
   background-color: hsl(168, 54%, 60%);
-  padding-top: 24px;
-  padding-bottom: 31px;
-  width: 320px;
+  padding: 24px 30px 31px 30px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__decor {
-    width: 334px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog__decor {
-    width: 525px;
+    flex-grow: 1;
   }
 }
 
 .catalog__toy {
   background-color: hsl(171, 48%, 55%);
-  padding-top: 24px;
-  padding-bottom: 31px;
-  width: 320px;
+  padding: 24px 30px 31px 30px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__toy {
-    width: 334px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog__toy {
-    width: 525px;
+    flex-grow: 1;
   }
 }
 
 .catalog__card {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  padding: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__card {
     display: grid;
-    grid-template-columns: 292px 334px;
-    grid-template-rows: 50px 90px 120px 24px 52px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr 1fr 1fr;
     row-gap: 33px;
     column-gap: 42px;
+    padding: 50px;
   }
 
   .catalog__card-title {
@@ -81,6 +68,7 @@
   .catalog__card-best {
     grid-column: 2/3;
     grid-row: 1/2;
+    text-align: end;
   }
 
   .catalog__card-about {
@@ -95,12 +83,13 @@
 
   .catalog__card-image {
     grid-column: 2/3;
-    grid-row: 2/4;
+    grid-row: 2/6;
   }
 
   .catalog__card-prize {
     grid-column: 1/2;
     grid-row: 4/5;
+    text-align: center;
   }
 
   .catalog__card__button {
@@ -222,9 +211,11 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  text-align: center;
+  text-align: start;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
+  max-width: 160px;
+  display: block;
 }
 
 .catalog__card-prize {
@@ -241,4 +232,16 @@
   font-family: inherit;
   max-width: 292px;
   height: 52px;
+}
+
+.catalog__decor-icon {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+}
+
+.catalog__toy-icon {
+  position: absolute;
+  top: 20%;
+  left: 75%;
 }
