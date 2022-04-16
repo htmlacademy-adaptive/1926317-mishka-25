@@ -1,6 +1,4 @@
 .main-footer {
-  margin: 0 auto;
-  max-width: 1150px;
   background: hsl(0, 0%, 95%);
   font-weight: 700;
   font-size: 19px;
@@ -8,21 +6,12 @@
 }
 
 .main-footer__wrapper {
+  max-width: 1050px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-
-.social__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  min-width: 170px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
 }
 
 .main-footer__copyright {

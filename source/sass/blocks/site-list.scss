@@ -6,3 +6,16 @@
   text-decoration: none;
   color: hsl(0, 0%, 0%);
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    order: 0;
+  }
+}
