@@ -1,0 +1,7 @@
+@media (min-width: $tablet-width) {
+  .main-navigation__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}

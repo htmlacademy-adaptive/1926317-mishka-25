@@ -7,3 +7,10 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .slider__button {
+    order: 1;
+    font-size: 17px;
+  }
+}
