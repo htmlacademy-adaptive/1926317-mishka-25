@@ -1,9 +1,29 @@
+.catalog-filter {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 34px;
+}
+
+.catalog-filter__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-filter__title {
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: hsl(168, 54%, 60%);
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .catalog-filter__control-label {
@@ -32,4 +52,117 @@
   text-transform: uppercase;
   color: hsl(0, 0%, 27%);
   font-family: inherit;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog-filter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+
+  .catalog-filter-wrapper:nth-child(2n) {
+    background-color: hsl(0, 0%, 95%);
+  }
+
+  .catalog-filter__fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .catalog-filter__title {
+    grid-column: 1/2;
+  }
+
+  .catalog-filter__list {
+    grid-column: 2/4;
+  }
+
+  .catalog-filter__color:nth-child(2n+1) {
+    grid-column: 3/4;
+  }
+
+  .catalog-filter__color:nth-child(2n) {
+    grid-column: 2/3;
+  }
+
+  .catalog-filter__name {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__surname {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__patronymic {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__phone-number {
+    grid-column: 2/4;
+  }
+
+  .catalog-filter__email-text {
+    grid-column: 2/4;
+  }
+
+  .catalog-filter__message-text {
+    grid-column: 2/4;
+  }
+
+  .catalog-filter-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .catalog-filter__button {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-filter__fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 97px;
+    padding-right: 225px;
+  }
+
+  .catalog-filter__list {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__color:nth-child(3n+1) {
+    grid-column: 4/5;
+  }
+
+  .catalog-filter__color:nth-child(3n) {
+    grid-column: 3/4;
+  }
+
+  .catalog-filter__color:nth-child(3n+2) {
+    grid-column: 2/3;
+  }
+
+  .catalog-filter__phone-number {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__email-text {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__message-text {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter-inner {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
 }

@@ -1,7 +1,16 @@
+.form-catalog__wrapper {
+  padding: 30px;
+}
+
 .form-catalog__title {
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+  margin: 0;
+  padding-top: 73px;
+  padding-bottom: 73px;
+  text-align: center;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .form-catalog__text {
@@ -9,4 +18,32 @@
   font-size: 13px;
   line-height: 24px;
   color: hsl(0, 0%, 27%);
+}
+
+@media (min-width: $tablet-width) {
+  .form-catalog__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 101px;
+    padding-bottom: 75px;
+  }
+
+  .form-catalog__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 54px 50px 63px 50px;
+  }
+
+  .form-catalog__wrapper {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 102px;
+    padding-bottom: 95px;
+  }
 }
