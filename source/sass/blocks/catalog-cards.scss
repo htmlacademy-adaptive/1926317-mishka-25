@@ -1,16 +1,22 @@
 .catalog-cards__wrapper {
   padding: 30px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.catalog-cards__inner {
+  background-color: hsl(0, 0%, 95%);
 }
 
 .catalog-cards__title {
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 73px;
   padding-bottom: 73px;
   text-align: center;
-  background-color: hsl(0, 0%, 95%);
+  max-width: 1150px;
 }
 
 .catalog-cards__list {
