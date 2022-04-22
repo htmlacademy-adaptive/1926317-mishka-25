@@ -14,6 +14,7 @@
   line-height: 30px;
   align-items: center;
   margin: 0;
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,13 +28,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .about__title {
-    font-size: 53px;
-    line-height: 57px;
-  }
-}
-
 .about__list {
   font-weight: 700;
   font-size: 17px;
@@ -43,17 +37,94 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   row-gap: 32px;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__item:nth-child(1) .about__item-icon {
+  margin-bottom: 16px;
+}
+
+.about__item:nth-child(2) .about__item-icon {
+  margin-bottom: 26px;
+}
+
+.about__item:nth-child(3) .about__item-icon {
+  margin-bottom: 21px;
+}
+
+.about__item:nth-child(4) .about__item-icon {
+  margin-bottom: 17px;
+}
+
+.about__item:nth-child(5) .about__item-icon {
+  margin-bottom: 26px;
+}
+
+.about__item:nth-child(6) .about__item-icon {
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .about__list {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     row-gap: 55px;
-    column-gap: 70px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .about__item:nth-child(1),
+  .about__item:nth-child(2),
+  .about__item:nth-child(3) {
+    grid-column: 1/2;
+  }
+
+  .about__item:nth-child(4),
+  .about__item:nth-child(5),
+  .about__item:nth-child(6) {
+    grid-column: 2/3;
+  }
+
+  .about__item:nth-child(1),
+  .about__item:nth-child(4) {
+    grid-row: 1/2;
+  }
+
+  .about__item:nth-child(2),
+  .about__item:nth-child(5) {
+    grid-row: 2/3;
+  }
+
+  .about__item:nth-child(3),
+  .about__item:nth-child(6) {
+    grid-row: 3/4;
+  }
+
+  .about__title {
+    margin-bottom: 41px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0;
+    padding-top: 68px;
+    padding-bottom: 90px;
+  }
+
+  .about__wrapper {
+    max-width: 675px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 39px;
   }
 }

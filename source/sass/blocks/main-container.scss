@@ -1,11 +1,16 @@
 .main-container {
+  position: relative;
   margin: 0 auto;
-  max-width: 1150px;
   background-color: #ffffff;
   background-image: url("/img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: top;
   background-size: 100%, cover;
+  background-position: 50% -17px;
+}
+
+.main-container__wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .main-container__title {
@@ -18,6 +23,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-container {
+    top: 1px;
+  }
+
   .main-container__title {
     padding: 155px 50px 372px 50px;
     font-size: 43px;
