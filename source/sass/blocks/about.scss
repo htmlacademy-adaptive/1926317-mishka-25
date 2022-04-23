@@ -72,8 +72,9 @@
 
 @media (min-width: $tablet-width) {
   .about__list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(260px, 265px) minmax(320px, 325px);
     grid-template-rows: auto;
+    column-gap: 70px;
     row-gap: 55px;
     font-size: 20px;
     line-height: 22px;

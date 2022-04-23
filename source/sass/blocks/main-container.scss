@@ -1,11 +1,9 @@
 .main-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin: 0 auto;
   background-color: #ffffff;
-  background-image: url("/img/hero-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%, cover;
-  background-position: 50% -17px;
 }
 
 .main-container__wrapper {
@@ -13,24 +11,9 @@
   margin: 0 auto;
 }
 
-.main-container__title {
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
-  text-align: center;
-  margin: 0;
-  padding: 73px 30px 120px 30px;
-}
-
 @media (min-width: $tablet-width) {
   .main-container {
     top: 1px;
-  }
-
-  .main-container__title {
-    padding: 155px 50px 372px 50px;
-    font-size: 43px;
-    line-height: 50px;
   }
 }
 
