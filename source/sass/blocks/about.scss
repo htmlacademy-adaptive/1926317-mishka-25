@@ -1,11 +1,12 @@
 .about {
   padding: 30px;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .about__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .about__title {
@@ -14,24 +15,7 @@
   line-height: 30px;
   align-items: center;
   margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .about__title {
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .about {
-    padding: 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .about__title {
-    font-size: 53px;
-    line-height: 57px;
-  }
+  margin-bottom: 28px;
 }
 
 .about__list {
@@ -43,17 +27,105 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   row-gap: 32px;
 }
 
+.about__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__item:nth-child(1) .about__item-icon {
+  margin-bottom: 16px;
+}
+
+.about__item:nth-child(2) .about__item-icon {
+  margin-bottom: 26px;
+}
+
+.about__item:nth-child(3) .about__item-icon {
+  margin-bottom: 21px;
+}
+
+.about__item:nth-child(4) .about__item-icon {
+  margin-bottom: 17px;
+}
+
+.about__item:nth-child(5) .about__item-icon {
+  margin-bottom: 26px;
+}
+
+.about__item:nth-child(6) .about__item-icon {
+  margin-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
+  .about {
+    padding: 50px;
+    min-width: 768px;
+    padding-top: 59px;
+    padding-bottom: 90px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 41px;
+  }
+
   .about__list {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 55px;
+    grid-template-columns: minmax(260px, 265px) minmax(320px, 325px);
+    grid-template-rows: auto;
     column-gap: 70px;
+    row-gap: 55px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .about__item:nth-child(1),
+  .about__item:nth-child(2),
+  .about__item:nth-child(3) {
+    grid-column: 1/2;
+  }
+
+  .about__item:nth-child(4),
+  .about__item:nth-child(5),
+  .about__item:nth-child(6) {
+    grid-column: 2/3;
+  }
+
+  .about__item:nth-child(1),
+  .about__item:nth-child(4) {
+    grid-row: 1/2;
+  }
+
+  .about__item:nth-child(2),
+  .about__item:nth-child(5) {
+    grid-row: 2/3;
+  }
+
+  .about__item:nth-child(3),
+  .about__item:nth-child(6) {
+    grid-row: 3/4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0;
+    padding-top: 68px;
+    padding-bottom: 98px;
+  }
+
+  .about__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 39px;
   }
 }
