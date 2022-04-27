@@ -43,10 +43,19 @@
   .main-footer__wrapper {
     justify-content: space-between;
     padding: 50px;
+    padding-top: 27px;
+    padding-bottom: 20px;
   }
 
   .main-footer__divider {
     max-width: 150px;
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    padding-top: 27px;
+    padding-bottom: 20px;
   }
 }

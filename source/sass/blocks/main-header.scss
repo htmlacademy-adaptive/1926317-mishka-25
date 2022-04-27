@@ -17,7 +17,7 @@
   min-width: 260px;
   text-align: center;
   margin-top: 22px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -46,6 +46,7 @@
     width: 100%;
     height: 100%;
     top: 88px;
+    left: 0;
     z-index: 0;
   }
 
@@ -56,6 +57,7 @@
     width: 100%;
     height: 1px;
     top: 87px;
+    left: 0;
     z-index: 1;
   }
 
@@ -72,6 +74,8 @@
   .main-header__text {
     display: block;
     font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
     margin: 0;
     order: 2;
     padding-right: 50px;
@@ -104,5 +108,10 @@
     height: 1px;
     top: 87px;
     z-index: 1;
+  }
+
+  .main-header__text {
+    padding-right: 50px;
+    padding-top: 10px;
   }
 }
