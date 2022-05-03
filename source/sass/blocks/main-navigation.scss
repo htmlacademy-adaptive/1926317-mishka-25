@@ -57,7 +57,14 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  min-width: 360px;
+  min-width: 320px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-navigation {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: $tablet-width) {
