@@ -71,6 +71,10 @@
   line-height: 24px;
 }
 
+.catalog-card__basket {
+  color: rgb(0, 0, 0, 0.2);
+}
+
 .catalog-card__basket:hover {
   color: hsl(168, 54%, 60%);
 }
@@ -118,10 +122,12 @@
 
   .catalog-card {
     display: flex;
+    margin: 0;
+    flex-grow: 1;
   }
 
   .catalog-card__link {
-    flex-grow: 1;
+    flex-grow: 0;
   }
 
   .catalog-card__inner {
