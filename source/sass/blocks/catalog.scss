@@ -127,6 +127,12 @@
     background-position: 50% -60px;
   }
 
+  @media (min-resolution: 2dppx) {
+    .catalog__wrapper {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
+  }
+
   .catalog__title {
     padding: 104px 50px 358px 50px;
     font-size: 43px;
@@ -179,7 +185,7 @@
   }
 
   .catalog__title {
-    padding: 95px 50px 356px 50px;
+    padding: 95px 150px 356px 150px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -238,20 +244,30 @@
 }
 
 .catalog__property {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-bottom: 24px;
-  column-gap: 16px;
+  margin-bottom: 26px;
 }
 
-.catalog__card-property {
+.catalog__property div {
+  display: flex;
+  border-bottom: solid 1px hsl(0, 0%, 93%);
+  padding-bottom: 12px;
+}
+
+.catalog__property div:not(:first-child) {
+  margin-top: 8px;
+}
+
+.catalog__card-property,
+.catalog__card-property-value {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: hsl(0, 0%, 27%);
-  padding-bottom: 18px;
   align-items: center;
-  border-bottom: solid 1px hsl(0, 0%, 93%);
+}
+
+.catalog__card-property {
+  min-width: 97px;
 }
 
 .catalog__card-image {
@@ -311,7 +327,7 @@
     column-gap: 42px;
     padding: 50px;
     padding-top: 44px;
-    padding-bottom: 58px;
+    padding-bottom: 63px;
     margin: 0;
   }
 

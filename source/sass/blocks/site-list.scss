@@ -81,23 +81,14 @@
     margin-right: 0;
   }
 
-  // .site-list__item:nth-child(2n+1) {
-  //   margin-left: 0;
-  //   margin-right: 35px;
-  // }
-
-  // .site-list__item:nth-child(2n) {
-  //   margin-right: 0;
-  //   margin-left: 35px;
-  // }
-
   .site-list__link {
     padding-top: 32.5px;
     padding-bottom: 31.5px;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .site-list__item:nth-child(2n+1) .site-list__link {
-    // border-right: solid 1px rgb(0, 0, 0, 0.1);
     padding-right: 35px;
   }
 

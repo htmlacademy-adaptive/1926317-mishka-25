@@ -97,3 +97,13 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-list__link {
+    padding-left: 34px;
+  }
+
+  .user-list__item:last-child .user-list__link {
+    padding-left: 84px;
+  }
+}
