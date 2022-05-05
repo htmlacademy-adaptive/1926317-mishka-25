@@ -82,6 +82,11 @@
     min-width: 321px;
   }
 
+  .main-header__logo-image {
+    height: auto;
+    width: 113px;
+  }
+
   .main-header__text {
     display: block;
     font-weight: 400;
@@ -99,6 +104,13 @@
     order: 1;
     padding: 0;
     text-align: center;
+  }
+
+  .main-header__logo-image {
+    display: block;
+    height: 74px;
+    width: 200px;
+    padding-left: 50px;
   }
 
   .main-header::before {
