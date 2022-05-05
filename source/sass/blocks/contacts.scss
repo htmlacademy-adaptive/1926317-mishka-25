@@ -115,8 +115,9 @@
 .contacts__map svg {
   position: absolute;
   z-index: 1;
-  top: 145px;
   left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -187,8 +188,9 @@
   .contacts__map svg {
     position: absolute;
     z-index: 1;
-    top: 140px;
-    right: 340px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .contacts__button-wrapper {

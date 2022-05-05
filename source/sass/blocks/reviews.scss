@@ -5,7 +5,7 @@
 
 .reviews__inner {
   position: relative;
-  background-image: url("/img/review.jpg");
+  background-image: url("../img/review.jpg");
   background-repeat: no-repeat;
   max-width: 1050px;
 }
@@ -85,7 +85,7 @@
 
   @media (min-resolution: 2dppx) {
     .reviews__inner {
-      background-image: url("/img/review2x.jpg");
+      background-image: url("../img/review2x.jpg");
       background-size: 350px;
     }
   }
