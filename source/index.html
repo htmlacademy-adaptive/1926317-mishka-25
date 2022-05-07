@@ -64,7 +64,7 @@
     </svg>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <nav class="main-navigation main-navigation--closed">
+        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
           <a class="main-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/header/mishka-logo-desktop.svg">
@@ -311,5 +311,37 @@
         </div>
       </div>
     </footer>
+    <!--Для скрытия модалки добавить класс modal-close-->
+    <div class="modal modal-close">
+      <div class="modal__wrapper">
+        <section class="modal__content">
+          <h2 class="modal__title"> Добавить <br> в корзину </h2>
+          <form class="form-basket" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="form-basket__fieldset">
+              <legend class="form-basket__legend">Выберите размер:</legend>
+              <ul class="form-basket__list">
+                <li class="form-basket__item">
+                  <input class="form-basket__input visually-hidden" type="radio" id="size-s" name="size" value="small" checked>
+                  <label class="form-basket__button-size form-basket__button-size--active" for="size-s">S</label>
+                </li>
+                <li class="form-basket__item">
+                  <input class="form-basket__input visually-hidden" type="radio" id="size-m" name="size" value="medium">
+                  <label class="form-basket__button-size" for="size-m">M</label>
+                </li>
+                <li class="form-basket__item">
+                  <input class="form-basket__input visually-hidden" type="radio" id="size-l" name="size" value="large">
+                  <label class="form-basket__button-size" for="size-l">L</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="form-basket__wrapper">
+              <button class="form-basket__button"> Добавить </button>
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

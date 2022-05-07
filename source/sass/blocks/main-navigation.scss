@@ -37,8 +37,8 @@
   width: 29px;
   background: hsl(345, 6%, 13%);
   position: absolute;
-  right: 0.5px;
-  top: 6px;
+  right: -2px;
+  top: 7px;
   transform: rotate(45deg);
 }
 
@@ -48,8 +48,8 @@
   width: 29px;
   background: hsl(345, 6%, 13%);
   position: absolute;
-  right: 0.5px;
-  top: 6px;
+  right: -2px;
+  top: 7px;
   transform: rotate(-45deg);
 }
 
@@ -58,6 +58,15 @@
   margin: 0 auto;
   padding: 0;
   min-width: 320px;
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
+
+.main-navigation--nojs .site-list,
+.main-navigation--nojs .user-list {
+  position: static;
 }
 
 @media (max-width: $mobile-width-only) {
