@@ -2,6 +2,14 @@
   display: none;
 }
 
+.bonus-list__item:hover {
+  opacity: 0.6;
+}
+
+.bonus-list__item:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $desktop-width) {
   .bonus-list {
     display: flex;
@@ -26,6 +34,6 @@
     text-decoration: none;
     padding-top: 19px;
     padding-bottom: 19px;
-    padding-right: 55px;
+    padding-right: 62px;
   }
 }
