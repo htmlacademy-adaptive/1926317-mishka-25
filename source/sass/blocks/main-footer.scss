@@ -32,12 +32,25 @@
 
 .main-footer__logo {
   display: none;
+  color: #000000;
+}
+
+.main-footer__logo:hover {
+  color: hsl(171, 50%, 52%);
+}
+
+.main-footer__logo:active {
+  color: hsl(171, 50%, 52%, 0.3);
 }
 
 @media (min-width: $tablet-width) {
   .main-footer__logo {
     display: block;
     min-width: 120px;
+  }
+
+  .main-footer__copyright {
+    margin-left: 10px;
   }
 
   .main-footer__wrapper {

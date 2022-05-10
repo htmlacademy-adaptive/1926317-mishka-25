@@ -10,6 +10,13 @@
 .main-header__wrapper {
   max-width: 1150px;
   margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-header__wrapper {
+    height: 80px;
+  }
 }
 
 .main-header__logo {
@@ -109,8 +116,8 @@
   .main-header__logo-image {
     display: block;
     height: 74px;
-    width: 200px;
-    padding-left: 50px;
+    width: 152px;
+    padding-left: 73px;
   }
 
   .main-header::before {
@@ -125,6 +132,6 @@
 
   .main-header__text {
     padding-right: 50px;
-    padding-top: 10px;
+    padding-top: 0;
   }
 }
