@@ -4,25 +4,12 @@
   padding-bottom: 26px;
 }
 
-.user-list__item:hover {
+.user-list__item:hover span {
   opacity: 0.6;
 }
 
-.user-list__item:active {
-  opacity: 0.3;
-}
-
-
-.user-list__item-icon-search:hover,
-.user-list__item-icon-cart:hover {
-  fill: hsl(168, 54%, 60%);
-  opacity: 1;
-}
-
-.user-list__item-icon-search:active,
-.user-list__item-icon-cart:active {
-  fill: hsl(168, 54%, 60%);
-  opacity: 0.3;
+.user-list__item:active span {
+  opacity: 0.2;
 }
 
 .user-list__link {
@@ -38,8 +25,15 @@
 .user-list__item-icon-cart {
   position: absolute;
   left: 30px;
-  fill: hsl(0, 0%, 0%);
-  opacity: 0.2;
+  fill: hsl(0, 0%, 0%, 0.2);
+}
+
+.user-list__link:hover svg {
+  fill: hsl(168, 54%, 60%, 1);
+}
+
+.user-list__link:active svg {
+  fill: hsl(168, 54%, 60%, 0.3);
 }
 
 @media (max-width: $mobile-width-only) {
