@@ -10,7 +10,7 @@
     <link rel="icon" href="./favicon.ico" />
     <link rel="icon" href="img/favicon/16.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/152.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="manifest" href="./manifest.webmanifest" />
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -111,7 +111,7 @@
     </svg>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
           <a class="main-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/header/mishka-logo-desktop.svg" />
@@ -197,7 +197,8 @@
               <source media="(min-width: 768px)" srcset="img/catalog/triple-set-tablet.jpg, img/catalog/triple-set-tabletx2.jpg 2x" />
               <img class="catalog__card-image" src="img/catalog/triple-set.jpg" srcset="img/catalog/triple-set-mobilex2.jpg 2x" width="260" height="315" alt="изображение товара" />
             </picture>
-            <span class="catalog__card-prize">Цена: 990 руб.</span> <button class="catalog__card-button" type="button">заказать</button>
+            <span class="catalog__card-prize">Цена: 990 руб.</span>
+            <a class="catalog__card-button" href="#">заказать</a>
           </div>
         </div>
       </section>
@@ -289,11 +290,15 @@
           <div class="contacts__wrapper">
             <h2 class="contacts__title">Контакты</h2>
             <div class="contacts__text-wrapper">
-              <span class="contacts__text contacts__email">e-mail:</span> <span class="contacts__text contacts__email-text"><a>info@mimimishkashop.ru</a></span> <span class="contacts__text contacts__adress">адрес:</span>
+              <span class="contacts__text contacts__email">e-mail:</span>
+              <span class="contacts__text contacts__email-text">
+                <a href="mailto:info@mimimishkashop.ru?subject=Вопрос по HTML">info@mimimishkashop.ru</a>
+              </span>
+              <span class="contacts__text contacts__adress">адрес:</span>
               <span class="contacts__text contacts__adress-text">
-              г. Санкт-Петербург<br />
-              ул. Большая Конюшенная<br />
-              д. 19/8, офис 101
+                г. Санкт-Петербург<br />
+                ул. Большая Конюшенная<br />
+                д. 19/8, офис 101
               </span>
             </div>
           </div>
@@ -370,11 +375,19 @@
                   <input class="form-basket__input visually-hidden" type="radio" id="size-s" name="size" value="small" checked="checked" />
                   <label class="form-basket__button-size form-basket__button-size--active" for="size-s">S</label>
                 </li>
-                <li class="form-basket__item"><input class="form-basket__input visually-hidden" type="radio" id="size-m" name="size" value="medium" /> <label class="form-basket__button-size" for="size-m">M</label></li>
-                <li class="form-basket__item"><input class="form-basket__input visually-hidden" type="radio" id="size-l" name="size" value="large" /> <label class="form-basket__button-size" for="size-l">L</label></li>
+                <li class="form-basket__item">
+                  <input class="form-basket__input visually-hidden" type="radio" id="size-m" name="size" value="medium" />
+                  <label class="form-basket__button-size" for="size-m">M</label>
+                </li>
+                <li class="form-basket__item">
+                  <input class="form-basket__input visually-hidden" type="radio" id="size-l" name="size" value="large" />
+                  <label class="form-basket__button-size" for="size-l">L</label>
+                </li>
               </ul>
             </fieldset>
-            <div class="form-basket__wrapper"><button class="form-basket__button" type="button">Добавить</button></div>
+            <div class="form-basket__wrapper">
+              <button class="form-basket__button" type="submit">Добавить</button>
+            </div>
           </form>
         </section>
       </div>

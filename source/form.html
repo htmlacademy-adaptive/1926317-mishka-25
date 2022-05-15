@@ -7,10 +7,10 @@
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
     <link rel="icon" href="img/favicon/16.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/152.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="manifest" href="./manifest.webmanifest" />
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -124,7 +124,7 @@
     </svg>
     <header class="main-header main-header--color">
       <div class="main-header__wrapper">
-        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
           <a class="main-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/header/mishka-logo-desktop.svg" />
@@ -259,11 +259,10 @@
           <div class="catalog-filter__wrapper catalog-filter__wrapper--data">
             <fieldset class="catalog-filter__fieldset">
               <div class="catalog-filter__divider">
-                <span class="catalog-filter__title">Тел</span>
+                <label class="catalog-filter__title" for="catalog-filter__phone-number">Тел</label>
               </div>
               <div class="catalog-filter__phone-number">
-                <label class="visually-hidden" for="catalog-filter__phone-number"></label>
-                <input class="catalog-filter__phone-number-input" type="tel" id="catalog-filter__phone-number" name="номер телефона" placeholder="+7 ХХХ ХХХ ХХ ХХ*" />
+                <input class="catalog-filter__phone-number-input" type="tel" id="cata log-filter__phone-number" name="номер телефона" placeholder="+7 ХХХ ХХХ ХХ ХХ*" />
                 <svg class="catalog-filter__phone-icon" width="25" height="24" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
@@ -271,10 +270,9 @@
             </fieldset>
             <fieldset class="catalog-filter__fieldset">
               <div class="catalog-filter__divider">
-                <span class="catalog-filter__title">E-mail</span>
+                <label class="catalog-filter__title" for="catalog-filter__email-text">E-mail</label>
               </div>
               <div class="catalog-filter__email-text">
-                <label class="visually-hidden" for="catalog-filter__email-text"></label>
                 <input class="catalog-filter__email-text-input" type="email" id="catalog-filter__email-text" name="электронная почта'" placeholder="Ваш Email*" />
                 <svg class="catalog-filter__email-text-icon" width="32" height="21" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-email"></use>
@@ -287,7 +285,9 @@
               <div class="catalog-filter__divider">
                 <span class="catalog-filter__title">Доп</span>
               </div>
-              <div class="catalog-filter__message-text-wrapper"><textarea class="catalog-filter__message-text" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea></div>
+              <div class="catalog-filter__message-text-wrapper">
+                <textarea class="catalog-filter__message-text" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
             </fieldset>
           </div>
           <div class="catalog-filter__super-wrapper">
