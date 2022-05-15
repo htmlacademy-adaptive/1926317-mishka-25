@@ -129,11 +129,11 @@
   .catalog__link {
     font-size: 20px;
     line-height: 30px;
-    padding-bottom: 42px;
+    padding: 25px 33px 40px 36px;
   }
 
   .catalog__toy .catalog__link {
-    padding: 21px 27px 44px 30px;
+    padding: 25px 33px 40px 36px;
   }
 
   .catalog__decor,
@@ -187,14 +187,19 @@
     line-height: 57px;
   }
 
+  .catalog__toy,
+  .catalog__decor {
+    width: 525px;
+  }
+
   .catalog__link {
-    padding: 25px 36px 34px 37px;
+    padding: 26px 36px 37px 37px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .catalog__toy .catalog__link {
-    padding: 25px 35px 36px 36px;
+    padding: 26px 35px 37px 36px;
   }
 }
 
@@ -299,10 +304,11 @@
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   font-family: inherit;
   border: 2px solid #444444;
-  width: 260px;
+  width: 124px;
   cursor: pointer;
   padding: 14px 68px 14px 68px;
   margin: 0 auto;
@@ -394,22 +400,23 @@
   .catalog__card-button {
     grid-column: 1/2;
     grid-row: 5/6;
-    width: 100%;
+    width: 152px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__card {
     display: grid;
-    grid-template-columns: 0.3fr 1.2fr 2fr;
-    padding-top: 129px;
+    grid-template-columns: 0.1fr 1.2fr 2fr;
+    padding-top: 126px;
     padding-bottom: 87px;
-    column-gap: 50px;
+    column-gap: 52px;
   }
 
   .catalog__card-best b {
     padding: 0;
     padding-top: 8px;
+    margin: 0;
   }
 
   .catalog__card-title {
@@ -418,6 +425,7 @@
     grid-column: 2/4;
     grid-row: 1/2;
     z-index: 1;
+    padding-bottom: 36px;
   }
 
   .catalog__card::after {

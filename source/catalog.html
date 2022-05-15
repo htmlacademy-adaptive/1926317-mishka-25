@@ -7,10 +7,10 @@
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
     <link rel="icon" href="img/favicon/16.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/152.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="manifest" href="./manifest.webmanifest" />
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -133,7 +133,7 @@
     </svg>
     <header class="main-header main-header--color">
       <div class="main-header__wrapper">
-        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
           <a class="main-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/header/mishka-logo-desktop.svg" />
@@ -283,7 +283,7 @@
             </div>
             <div class="production__inner-description">
               <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-              <a class="production__form-link" href="form.html">сделать заказ</a>
+              <a class="production__form-link" href="#">сделать заказ</a>
             </div>
           </div>
         </div>
@@ -333,6 +333,36 @@
         </div>
       </div>
     </footer>
+    <!--Для скрытия модалки добавить класс modal--close-->
+    <div class="modal modal--close">
+      <div class="modal__wrapper">
+        <section class="modal__content">
+          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+          <form class="form-basket" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="form-basket__fieldset">
+              <legend class="form-basket__legend">Выберите размер:</legend>
+              <ul class="form-basket__list">
+                <li class="form-basket__item">
+                  <input class="form-basket__input visually-hidden" type="radio" id="size-s" name="size" value="small" checked="checked" />
+                  <label class="form-basket__button-size form-basket__button-size--active" for="size-s">S</label>
+                </li>
+                <li class="form-basket__item">
+                  <input class="form-basket__input visually-hidden" type="radio" id="size-m" name="size" value="medium" />
+                  <label class="form-basket__button-size" for="size-m">M</label>
+                </li>
+                <li class="form-basket__item">
+                  <input class="form-basket__input visually-hidden" type="radio" id="size-l" name="size" value="large" />
+                  <label class="form-basket__button-size" for="size-l">L</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="form-basket__wrapper">
+              <button class="form-basket__button" type="submit">Добавить</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

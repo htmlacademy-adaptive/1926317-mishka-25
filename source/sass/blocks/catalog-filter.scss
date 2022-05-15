@@ -93,6 +93,10 @@
   border-color: hsl(168, 55%, 60%);
 }
 
+.catalog-filter__control-input:focus + .catalog-filter__control-mark {
+  outline: 3px solid #83b3d3;
+}
+
 .catalog-filter__chekbox:hover .catalog-filter__control-mark {
   border-color: hsl(168, 55%, 60%);
 }

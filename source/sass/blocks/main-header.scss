@@ -15,7 +15,7 @@
 
 @media (max-width: $mobile-width-only) {
   .main-header__wrapper {
-    height: 80px;
+    min-height: 80px;
   }
 }
 
